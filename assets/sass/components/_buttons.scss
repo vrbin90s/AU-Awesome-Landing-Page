@@ -1,0 +1,32 @@
+.btn {
+    &__primary {
+        padding: 10px 15px;
+        background: $color-gradient-primary;
+        color: $color-white;
+        border-radius: .3rem;
+
+
+    }
+    &__secondary {
+        background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+        box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+        border-radius: 2px;
+        color: $color-white;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 27px 26px;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.155em;
+        align-items: center;
+        max-width: 35rem;
+
+        @include respond(mobile-screen) {
+            max-height: 3.6rem;
+            max-width: 17.51rem;
+            font-size: 1rem;
+        }
+    }
+}

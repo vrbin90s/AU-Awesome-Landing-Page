@@ -1,0 +1,84 @@
+.banner {
+    grid-column: center-start / center-end;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(mobile-screen) {
+        grid-column: center-start / full-end;
+    }
+
+    
+
+    
+
+    h1 {
+        position: relative;
+        font-size: 4.8rem;
+        line-height: 116%;
+        font-weight: 500;
+        color: $color-light-text;
+        font-variant: small-caps;
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url('../images/ellipse-full.png');
+            top: -15%;
+            left: 45%;
+            transform: translateX(-50%);
+            height: 8.4rem;
+            width: 8.4rem;
+        }
+
+        @include respond(mobile-screen) {
+            font-size: 2.4rem;
+        }
+    }
+    p {
+        font-size: 2rem;
+        line-height: 132%;
+        letter-spacing: 0.04em;
+        font-weight: 400;
+        color: $color-light-text;
+        padding: 30px 0;
+        font-style: normal;
+
+        @include respond(mobile-screen) {
+            font-size: 1rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        padding-left: 10rem;
+
+        @include respond(mobile-screen) {
+            width: 70%;
+            padding-left: 0;
+        }
+    }
+
+    &__pictures {
+        width: 100%;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+
+        @include respond(mobile-screen) {
+            margin-right: -12rem;
+        }
+        
+        
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+        }
+    }
+}

@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    color: $color-light-text;
+    line-height: 1.6;
+    font-family: 'Avenir Next LT Pro', sans-serif;                                         
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content calc(100vh - 15rem) repeat(5, min-content);
+    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+    background: linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(34, 51%, 81%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+    z-index: 60;
+    
+
+    @include respond(mobile-screen) {
+        overflow: hidden;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 15%;
+        background-image: url('../images/ellipse-half.png');
+        background-repeat: no-repeat;
+        height: 13.2rem;
+        width: 13.2rem;
+        z-index: 600;
+    }
+}

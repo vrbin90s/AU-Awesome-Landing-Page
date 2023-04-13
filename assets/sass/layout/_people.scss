@@ -1,0 +1,67 @@
+.people {
+    grid-column: center-start / center-end;
+    position: relative;
+    overflow: hidden;
+   
+    &__section-title {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(desktop-screen) {
+            
+            margin-bottom: 45rem;
+        }
+
+        .slider-controls {
+            display: flex;
+            align-items: center;
+
+            .control-left {
+                img {
+                    width: 2.8rem;
+                    height: auto;
+                }
+            }
+
+            .control-right {
+                padding-left: 3.5rem;
+                img {
+                    width: 7.5rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &__cards {
+        padding: 5rem 0;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4rem;
+        
+
+        @include respond(desktop-screen) {
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: max-content 1fr;
+        padding: 3.2rem;
+        border-radius: .8rem; 
+        background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+    }
+
+    &__card-content {
+        grid-column: 1 / 3;
+        
+    }
+    
+}

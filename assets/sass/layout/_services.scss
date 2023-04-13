@@ -1,0 +1,77 @@
+.services {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 10rem;
+    padding: 10rem 0;
+
+    .title {
+        position: relative;
+        padding: 2rem 0;
+
+        @include respond(mobile-screen) {
+            padding: .5rem 0;
+        }
+
+        &::before {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-50%);
+            height:100%;
+            width: 150%;
+            background: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
+
+        }
+    }
+    
+
+
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        margin: auto;
+        
+    }
+
+    .card {
+        padding: 5rem;
+
+        @include respond(mobile-screen) {
+            padding: 3rem;
+        }
+ 
+
+        &__icon {
+            height: 4.8rem;
+            width: 4.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .8rem;
+            background-color: $color-white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+
+
+        }
+
+        &--bg {
+            background: $color-white;
+            box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
+            border-radius: .8rem;
+            padding: 5rem;
+            .card__icon {
+
+                background-color: $color-primary;
+
+            }
+
+            @include respond(mobile-screen) {
+                padding: 3rem;
+            }
+        }
+    }
+}

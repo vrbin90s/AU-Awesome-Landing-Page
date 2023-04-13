@@ -1,0 +1,47 @@
+.navigation {
+
+    &__menu {
+        .menu-item {
+            display: inline-block;
+            list-style: none;
+            padding-left: 4.8rem;
+        }
+
+        a {
+            color: $color-dark-text;
+            text-decoration: none;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-weight: 500;
+            font-variant: small-caps;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .btn__primary {
+            color: $color-white; 
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    &__mobile-menu {
+        display: none;
+
+        @include respond(tablet-screen) {
+            display: block;
+        }
+    }
+
+    @include respond(tablet-screen) {
+        display: none;
+    }
+
+
+}

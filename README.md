@@ -10,4 +10,4 @@ This is a simple Web Design created using HTML and CSS tools based on the design
 
 ## Screenshots
 
-![127 0 0 1_8080_(Desktop)](https://user-images.githubusercontent.com/72602872/231729177-3c4a9384-6d65-4ddd-9108-1044543fbc08.png
+![127 0 0 1_8080_(Desktop)](https://user-images.githubusercontent.com/72602872/231729936-f14ff7ee-775f-4b61-b4ce-c7e9de231d24.png)

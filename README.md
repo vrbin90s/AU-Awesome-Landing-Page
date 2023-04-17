@@ -1,6 +1,6 @@
 ## AU Awesome UI - Landing Page
 
-This is a simple Web Design created using HTML and CSS tools based on the design provided from Figma. 
+This particular project entailed the development of a visually appealing and functional website through the utilization of HTML and CSS. The main objective was to transform a design from Figma into a working website, a task that was accomplished through the implementation of key web development techniques. Advanced features such as CSS Grids, Flex Box, and SASS were skillfully utilized to bring the design to life. The end result is a sleek and professional website that exemplifies an expert grasp of modern web development methods.
 
 ## Instriction
 
